@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Tampa Museum of Art</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/master.css">
+    <link rel="stylesheet" href="/css/collections.css">
+    <link rel="stylesheet" href="https://use.typekit.net/zca3wdx.css">
+  </head>
+  <body>
+    <!-- SIDE NAVIGATION MENU  -->
+    <div class="side-menu">
+      <button class="menu-btn">MENU</button>
+      <div class="nav-contain">
+        <nav>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="exhibitions.html">Exhibitions</a></li>
+          <li><a href="collections.html">Collections</a></li>
+          <li><a href="events.html">Events</a></li>
+        </nav>
+
+        <div class="menu-hours">
+          <span class="bold">Hours</span>
+          <p>MON – WED, FRI*: 10am – 5pm<br>
+            THU: 10am – 8pm<br>SAT – SUN: 10am – 5pm</p>
+          <p>*Fourth Fridays: 10am – 8pm</p>
+        </div>
+      </div>
+    </div>
+    <!-- END OF NAVIGATION  -->
+
+    <div class="main-content">
+
+      <!-- SECONDARY NAVIGATION AND PAGE TITLE  -->
+      <div class="secondary-nav">
+        <a href="index.html"><img src="/img/tm-logo.png" height="20px" alt="Tampa Museum of Art"></a>
+        <p class="title">Collections</p>
+        <a class="btn" href="events.html">Plan Your Visit</a>
+      </div>
+
+      <div class="slides">
+        <img class="mySlides" src="../img/collections/col1.jpg">
+        <img class="mySlides" src="../img/collections/col2.jpg">
+        <img class="mySlides" src="../img/collections/col3.jpg">
+        <img class="mySlides" src="../img/collections/col4.jpg">
+      </div>
+
+
+      <div class="collections">
+
+        <div class="collection-sec">
+          <h2>Classical Antiquity</h2>
+          <p>The first artwork purchased by the Tampa Museum of Art was an ancient Greek vase—an Attic black-figure column krater bought in 1981 —and this has remained an important area of collecting for the Museum ever since. </p>
+        </div>
+
+        <div class="collection-sec">
+          <h2>C. Paul Jennewein Collection</h2>
+          <p>Active throughout the early to mid-20th century, sculptor C. Paul Jennewein created works that ranged from intimate small-scale bronze sculptures to major architectural projects.</p>
+        </div>
+
+        <div class="collection-sec">
+          <h2>Works on Paper Modern & Contemporary Art</h2>
+          <p>The Museum’s collection of works on paper comprises approximately 1,000 prints, watercolors, and drawings. Taken together, this collection illustrates key stylistic movements as well as the rise of printmaking as an important and accessible artistic medium.</p>
+        </div>
+
+        <div class="collection-sec">
+          <h2>Decorative Arts & Sculpture Modern & Contemporary Art</h2>
+          <p>The Museum’s collection of decorative arts and sculpture comprises approximately 350 objects.</p>
+        </div>
+
+        <div class="collection-sec">
+          <h2>20th Century Modern Photography </h2>
+          <p>In the early 1980s, the Museum established photography—with an emphasis on work created after 1970—as a primary collecting area. The core of this collection was assembled using proceeds from the sale of secondary and tertiary objects deaccessioned in the mid-1980s.  </p>
+        </div>
+
+        <div  id="special" class="collection-sec">
+          <a id="viewmore" class="btn" href="exhibitions.html">View Our Current Exhibitions</a>
+        </div>
+
+
+
+      </div>
+
+
+    </div>
+
+    <!-- FOOTER  -->
+    <footer>
+      <div class="contain-footer">
+        <div class="footer-sec">
+          <h3>Tampa Museum of Art</h3>
+          <p>Cornelia Corbett Center<br>120 W. Gasparilla Plaza<br>Tampa, FL 33602</p>
+        </div>
+
+        <div class="footer-sec">
+          <h3>Call Us</h3>
+          <p>Main:  813.274.8130<br>Tickets:  813.421.8380</p>
+        </div>
+
+        <div class="footer-sec">
+          <h3>Hours</h3>
+          <p>MON – WED, FRI*: 10am – 5pm<br>
+          THU: 10am – 8pm<br>SAT – SUN: 10am – 5pm</p>
+          <p>*Fourth Fridays: 10am – 8pm</p>
+        </div>
+      </div>
+
+    </footer>
+
+  <script type="text/javascript">
+    var slideIndex = 0;
+    carousel();
+
+    function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1}
+    x[slideIndex-1].style.display = "block";
+    setTimeout(carousel, 1500); // Change image every 2 seconds
+    }
+  </script>
+
+    <!-- END OF PAGE  -->
+  </body>
+</html>

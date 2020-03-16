@@ -1,0 +1,138 @@
+.on-display {
+  text-align: center;
+  margin: 0 auto;
+  background-image: url(../img/display-01.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  max-width: calc(100% - 100px);
+  position: relative;
+  top: 40%;
+  transform: translateY(-50%);
+}
+
+.display-links a {
+  display: block;
+  padding: 5px;
+  margin: 5px;
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+  font-size: 24px;
+
+}
+
+.display-links:hover a {
+  color: rgba(0, 0, 0, 0.4);
+  transition: all .1s ease-in-out;
+}
+
+.display-links a:hover {
+  color: rgba(0, 0, 0, 1.0);
+  transition: all .1s ease-in-out;
+}
+
+.display-vp {
+  margin: auto;
+  height: calc(100vh - 80px);
+}
+
+.exhibit {
+  display: flex;
+  justify-content: space-between;
+  padding: 100px 0;
+}
+
+.exhibit-info {
+  width: 60%;
+  padding: 0 40px;
+}
+
+.sub-head {
+  display: block;
+  font-weight: 700;
+  margin: 15px 0;
+}
+
+.exhibit-img {
+  /* float: right; */
+  width: 50%;
+  height: 400px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.exhibit-btn {
+  margin: 15px 0;
+}
+
+.exhibit-btn .btn {
+  display: inline-block;
+  margin: 10px;
+  text-align: center;
+}
+
+
+/* BACKGROUND IMAGES FOR SECTIONS */
+#ex-1 {
+  background-image: url(../img/exhibits/abstract-ex.jpg);
+}
+
+#ex-2 {
+  background-image: url(../img/exhibits/echoing.jpg);
+}
+
+#ex-3 {
+  background-image: url(../img/exhibits/oswaldo.jpg);
+}
+
+#ex-4 {
+  background-image: url(../img/exhibits/glass.jpg);
+}
+
+#ex-5 {
+  background-image: url(../img/exhibits/reimagined.jpg);
+}
+
+#ex-6 {
+  background-image: url(../img/exhibits/kissandtell.jpg);
+}
+
+
+
+
+@media only screen and (max-width: 1100px) {
+  .exhibit {
+    display: block;
+    padding: 100px 0;
+  }
+
+
+  .exhibit-info {
+    width: 100%;
+    padding: 0 40px;
+  }
+
+  .exhibit-info p {
+    max-width: 800px;
+    margin: auto;
+  }
+
+
+  .exhibit-img {
+    /* float: right; */
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  @media only screen and (max-width: 375px) {
+    .on-display {
+      margin-top: 175px;
+    }
+  }
+}

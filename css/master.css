@@ -1,0 +1,382 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: fieldwork, sans-serif;
+}
+
+/* UNIVERSAL ITEMS STYLING*/
+
+h1, h2, h3, h4, h5 {
+  letter-spacing: .5px;
+}
+
+.btn {
+  text-decoration: none;
+  color: black;
+  border: 1.5px solid black;
+  padding: 4px 10px 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: black;
+  color: white;
+}
+
+.btn-2 {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  border: none;
+  border-bottom: 2px solid black;
+  text-align: right;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight:bold;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.btn-2:hover {
+  background-color: black;
+  color: white;
+}
+
+.newsletter {
+  margin: 75px auto;
+  text-align: center;
+}
+
+.newsletter h3 {
+  text-transform: uppercase;
+  margin: 0 0 20px;
+}
+
+.newsletter .email {
+  width: 250px;
+  max-width: 600px;
+  margin: 0;
+  padding: 5px;
+  height: 30px;
+}
+
+input[type=email] {
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+.newsletter .submit {
+  position: relative;
+  left: -5px;
+  margin: 0;
+  height: 30px;
+  width: 70px;
+  border: 0;
+  color: white;
+  background-color: black;
+}
+
+/*ANIMATION KEYFRAMES */
+
+@keyframes fade-from-top {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
+/* MENU NAVIGATION STYLES */
+
+.side-menu {
+  background-color: black;
+  color: white;
+  width: 100px;
+  height: 100vh;
+  position: fixed;
+  z-index: 10;
+}
+
+.side-menu {
+  transition: all .3s ease-in-out;
+}
+
+.side-menu:hover .nav-contain {
+  display: inherit;
+  animation: fade-in ease-in-out .3s;
+}
+
+.menu-btn {
+  font-size: 16px;
+  color: white;
+  background-color: black;
+  border: none;
+  padding: 5px 10px;
+  text-align: center;
+  margin: 20px 15px;
+}
+
+.nav-contain {
+  text-align: left;
+  height: 100%;
+  display: none;
+}
+
+.nav-contain nav a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 5px;
+}
+
+.nav-contain nav a:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.nav-contain li {
+  list-style: none;
+  margin: 25px;
+  font-size: 20px;
+}
+
+.menu-hours {
+  margin: 25vh 25px 0;
+  text-align: right;
+}
+
+.menu-hours span {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.menu-hours p {
+  font-weight: 300;
+  font-size: 12px;
+  padding-top: 5px;
+}
+
+.side-menu:hover {
+  background-color: black;
+  color: white;
+  width: 50%;
+}
+
+
+
+
+/* MENU NAVIGATION STYLES END*/
+
+/* MAIN CONTENT STYLING */
+
+.main-content {
+  width: calc(100% - 100px);
+  float: right;
+  height: auto;
+  /* height: 1000px; /*REMOVE ONCE ALL CONTENT IS IN ALL PAGES*/
+}
+
+.secondary-nav {
+  margin: 20px 5%;
+  display: flex;
+  text-transform: uppercase;
+  justify-content: space-between;
+  flex: 1;
+}
+.secondary-nav img {
+  position: relative;
+  top: 12px;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 20px;
+  padding: 3px;
+}
+
+
+
+
+
+/* MAIN CONTENT STYLING END */
+
+
+/* FOOTER STYLES */
+
+footer {
+  width: calc(100% - 100px);
+  float: right;
+  background-color: black;
+  color: white;
+  height: 300px;
+  /* padding: 50px; */
+}
+
+.contain-footer {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.footer-sec {
+  margin: 50px 5% 0;
+}
+
+.footer-sec h3 {
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.footer-sec p {
+  font-size: 12px;
+  padding-top: 5px;
+  font-weight: 300;
+}
+
+/* FOOTER STYLES END */
+
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 680px) {
+
+  .newsletter {
+    margin: 75px auto;
+    text-align: center;
+  }
+
+  .newsletter h3 {
+    text-transform: uppercase;
+    padding: 0 20px;
+    margin: 0 0 20px;
+  }
+
+
+              /* MENU MOBILE CHANGE */
+
+  .side-menu {
+    background-color: black;
+    color: white;
+    width: 100vw;
+    height: 80px;
+    position:relative;
+    z-index: 10;
+  }
+
+  .side-menu:hover .nav-contain {
+    display: block;
+    animation: none;
+
+  }
+
+  .menu-hours {
+    display: none;
+  }
+
+
+  .nav-contain {
+    text-align: right;
+    background-color: black;
+    width: 100vw;
+    height: 50vh;
+    display: none;
+    position: relative;
+    top: -25px;
+
+  }
+
+  .nav-contain nav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 5px;
+  }
+
+  .nav-contain nav a:hover {
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  .nav-contain li {
+    list-style: none;
+    margin: 25px;
+    font-size: 20px;
+  }
+
+
+  .side-menu:hover {
+    background-color: black;
+    color: white;
+    width: 100%;
+  }
+
+
+.main-content {
+  width: 100%;
+}
+
+footer {
+  width: 100%;
+}
+
+
+        /* SECONDARY HEADER CHANGE */
+
+
+  .title {
+    display: none;
+  }
+
+}
+
+
+@media only screen and (max-width: 425px) {
+  .secondary-nav {
+    margin: auto;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    flex: 1;
+  }
+  .secondary-nav img {
+    display: block;
+    text-align: center;
+    margin: auto;
+    position: relative;
+    top: 12px;
+  }
+
+  .secondary-nav a {
+    display: block;
+    width: 200px;
+    text-align: center;
+    margin: 20px auto;
+
+  }
+
+  footer {
+    height: auto;
+  }
+  .contain-footer {
+    display: block;
+  }
+
+
+  .footer-sec:last-of-type {
+    width: 100%;
+    padding-bottom: 50px;
+  }
+}

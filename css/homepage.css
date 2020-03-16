@@ -1,0 +1,201 @@
+.main-contain {
+  clear: both;
+  /* height: 100px; */
+  width: 70%;
+  max-width: 1200px;
+  margin: auto;
+  position: relative;
+}
+
+h1 {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-size: 75px;
+  text-transform: uppercase;
+  line-height: .9;
+}
+
+.intro-box {
+  /* margin-top: 100px; */
+  padding: 50px 10px 0 20px;
+  background-color: white;
+  max-width: 550px;
+  min-width: 400px;
+  height: 400px;
+  position: relative;
+  top: 70px;
+}
+
+
+.intro-box .btn {
+  font-weight: bold;
+}
+
+
+.slide-image {
+  height: 400px;
+  width: 550px;
+  position: absolute;
+  z-index: -1;
+}
+
+.slide-1 {
+  right: -50px;
+  background-image: url("../img/exhibits/echoing.jpg");
+
+  /* animation testing */
+  opacity: 0;
+  animation: fade-from-top ease-in-out 0.5s forwards;
+}
+
+.slide-2 {
+  top: 200px;
+  right: 60px;
+  background-image: url("../img/exhibits/abstract-ex.jpg");
+
+  /* animation testing */
+  opacity: 0;
+  animation: fade-from-top ease-in-out 0.7s forwards;
+
+}
+
+.intro-sec {
+  height: 700px;
+}
+
+
+.explore-sec {
+  width: 30%;
+  margin: 0 10px;
+  min-height: 200px;
+  position: relative;
+}
+
+.explore-sec h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.explore-sec .btn-2 {
+  margin-top: 20px;
+  position: absolute;
+  bottom: 0;
+}
+
+.explore-museum {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 25px 0 50px;
+}
+
+
+.full-image {
+  height: 200px;
+  background-image: url(../img/tampa-museum-2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.about {
+  margin: 75px auto;
+}
+.about h2 {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.about p {
+  max-width: 625px;
+  margin: auto;
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+
+  .explore-museum {
+    display: block;
+    justify-content: space-between;
+    width: 100%;
+    margin: 25px 0 50px;
+  }
+
+  .explore-sec {
+    width: 100%;
+    margin: 0 10px 50px;
+    min-height: 200px;
+    position: relative;
+
+  }
+
+  .explore-sec h2, .explore-sec p {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+
+  .main-contain {
+    width: 100%;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+  }
+
+  h1 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 50px;
+    text-transform: uppercase;
+    line-height: .9;
+    text-align: center;
+    position: relative;
+    top: -20px
+  }
+
+  .intro-box {
+    padding: 40px 0;
+    background-color: white;
+    width: 80%;
+    height: auto;
+    position: relative;
+    text-align: center;
+    margin: auto;
+  }
+
+  .intro-sec {
+    margin: auto;
+  }
+}
+
+
+@media only screen and (max-width: 350px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  .intro-box {
+    padding: 40px 0;
+    background-color: white;
+    width: 80%;
+    height: auto;
+    position: relative;
+    left: -10%;
+    text-align: center;
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .explore-museum, .about {
+    padding: 0 10%;
+    box-sizing: border-box;
+  }
+
+  .about {
+    margin-top: 20px;
+  }
+}

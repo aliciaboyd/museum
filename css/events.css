@@ -1,0 +1,120 @@
+.full-image {
+  height: 200px;
+  background-image: url(../img/tampa-museum.jpg);
+
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: bottom;
+  background-size: cover;
+  margin: 50px 0;
+}
+
+.events-sec {
+  display: flex;
+  justify-content: space-around;
+}
+
+.contain {
+  margin: auto;
+  max-width: 1200px;
+}
+
+
+.schedule {
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 60%;
+  max-width: 650px;
+}
+
+.schedule table {
+  width: 90%;
+  margin: auto;
+}
+
+.schedule td {
+  padding: 10px 0;
+}
+
+.schedule table .date {
+  text-align: left;
+  font-weight: 700;
+}
+
+.schedule table .time {
+  text-align: right;
+  font-weight: 700;
+}
+
+.schedule table .event {
+  text-align: center;
+}
+
+.sec-head {
+  font-weight: 600;
+  font-size: 20px;
+  border: 1px solid black;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.sec-head2 {
+  font-weight: 600;
+  font-size: 20px;
+  border: 1px solid black;
+  margin: 50px 0 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+
+.on-display {
+  width: 25%;
+  margin-right: 5%;
+}
+
+.on-display h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+
+.btn-ex {
+  margin: 15px 0;
+  display: block;
+  text-align: center;
+  width: auto;
+  max-width: 200px;
+  font-weight: 700;
+}
+
+
+@media only screen and (max-width: 750px) {
+  .events-sec {
+    display: block;
+    margin: auto;
+  }
+
+  .schedule {
+    margin: auto;
+    width: 80%;
+    max-width: 650px;
+  }
+
+  .on-display {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    margin: 50px auto;
+  }
+
+  .btn-ex {
+    margin: 15px auto;
+    display: block;
+    text-align: center;
+    width: auto;
+    max-width: 200px;
+    font-weight: 700;
+  }
+}
